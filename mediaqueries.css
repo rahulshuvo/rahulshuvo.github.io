@@ -1,3 +1,10 @@
+@media screen and (max-width: 700px) {
+  .about-containers {
+    flex-direction: column;
+  }
+}
+
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -64,12 +71,14 @@
     margin-bottom: 2rem;
   }
   .about-containers,
-  .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
   .contact-info-container {
-    margin: 0;
+    margin: 5px;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -99,5 +108,43 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 60%;
+    min-width: 360px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+  
+  .skill-card h2 {
+    font-size: 1.25rem; /* Slightly smaller font size */
+  }
+
+  .skill-list li {
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
+    padding: 6px; /* Adjust padding */
+  }
+}
+
+/* Responsive Styles for Very Small Screens (e.g., Mobile Phones) */
+@media (max-width: 480px) {
+  .container {
+    min-width: 300px;
+  }
+  .skill-card {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .skill-card h2 {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .skill-list li {
+    font-size: 0.8rem; /* Smaller text size */
+    padding: 5px; /* Adjust padding */
   }
 }
