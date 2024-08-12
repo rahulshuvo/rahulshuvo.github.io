@@ -45,8 +45,6 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
     margin: 0 auto 2rem;
   }
   .about-containers {
@@ -55,13 +53,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  section {
+    padding-top: 4vh;
+  }
   #contact,
   footer {
-    height: 40vh;
+    height: 35vh;
   }
   #profile {
-    height: 83vh;
     margin-bottom: 0;
+    height: unset;
   }
   article {
     font-size: 1rem;
@@ -97,7 +98,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 70vw;
     justify-content: center;
   }
   .section__text__p2 {
@@ -114,7 +115,7 @@
 @media (max-width: 768px) {
   .container {
     width: 60%;
-    min-width: 360px;
+    min-width: 400px;
   }
   .skills-grid {
     grid-template-columns: 1fr; /* Stack columns vertically */
@@ -133,18 +134,18 @@
 /* Responsive Styles for Very Small Screens (e.g., Mobile Phones) */
 @media (max-width: 480px) {
   .container {
-    min-width: 300px;
+    min-width: 360px;
   }
   .skill-card {
     padding: 15px; /* Reduce padding */
   }
 
   .skill-card h2 {
-    font-size: 1rem; /* Smaller font size */
+    font-size: 1.1rem; /* Smaller font size */
   }
 
   .skill-list li {
-    font-size: 0.8rem; /* Smaller text size */
+    font-size: .9rem; /* Smaller text size */
     padding: 5px; /* Adjust padding */
   }
 }

@@ -33,8 +33,6 @@ const skillsData ={
       "LaTeX",
       "NPM",
       "Firebase",
-      "Visual Studio Code",
-      "Figma",
       "MVC Design Pattern",
       "Data Structures",
       "Docker",

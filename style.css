@@ -112,6 +112,7 @@ a:hover {
 }
 
 .menu-links {
+  z-index:1;
   position: absolute;
   top: 100%;
   right: 0;
@@ -224,15 +225,15 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin-top: 1.5rem;
+  gap: 3rem;
 }
 
 /* ICONS */
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 /* BUTTONS */
