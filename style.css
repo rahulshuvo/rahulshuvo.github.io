@@ -298,6 +298,14 @@ section {
 #more_details {
   display: none;
 }
+#seeLess{
+  display: none;
+}
+.span-btn{
+  color: #000;
+  cursor: pointer;
+  outline: none;
+}
 .about-details-container {
   justify-content: center;
   flex-direction: column;

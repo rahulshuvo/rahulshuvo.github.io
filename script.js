@@ -5,19 +5,19 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-function seeDetails() {
-  var basicText = document.getElementById("basic_details");
+function toggleDetailsView() {
   var moreText = document.getElementById("more_details");
-  var btnText = document.getElementById("seeDetails");
+  var seeMOreBtn = document.getElementById("seeMore");
+  var seeLessBtn = document.getElementById("seeLess");
 
   if (moreText.style.display === "inline") {
-    btnText.innerHTML = "See Details"; 
+    seeMOreBtn.style.display = "inline";
+    seeLessBtn.style.display = "none"
     moreText.style.display = "none";
-    basicText.style.display = "block";
   } else {
-    btnText.innerHTML = "Hide Details"; 
+    seeMOreBtn.style.display = "none";
+    seeLessBtn.style.display = "inline"
     moreText.style.display = "inline";
-    basicText.style.display = "none";
   }
 }
 
