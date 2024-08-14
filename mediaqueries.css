@@ -6,10 +6,6 @@
 
 
 @media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
   .about-containers {
     flex-wrap: wrap;
   }
@@ -20,15 +16,14 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .logo {
+    height: 50%;
+  }
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
   }
   #profile,
   .section-container {
@@ -54,11 +49,7 @@
 
 @media screen and (max-width: 600px) {
   section {
-    padding-top: 4vh;
-  }
-  #contact,
-  footer {
-    height: 35vh;
+    padding-top: 8vh;
   }
   #profile {
     margin-bottom: 0;
@@ -70,12 +61,15 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   .about-containers,
   .btn-container {
     flex-wrap: wrap;
   }
   .contact-info-upper-container {
+    position: relative;
+    top: -25px;
     flex-direction: column;
   }
   .contact-info-container {
@@ -89,7 +83,7 @@
     font-size: 1.25rem;
   }
   .logo {
-    font-size: 1.5rem;
+    height: 40%;
   }
   .nav-links {
     flex-direction: column;

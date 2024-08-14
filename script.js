@@ -5,6 +5,22 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+function seeDetails() {
+  var basicText = document.getElementById("basic_details");
+  var moreText = document.getElementById("more_details");
+  var btnText = document.getElementById("seeDetails");
+
+  if (moreText.style.display === "inline") {
+    btnText.innerHTML = "See Details"; 
+    moreText.style.display = "none";
+    basicText.style.display = "block";
+  } else {
+    btnText.innerHTML = "Hide Details"; 
+    moreText.style.display = "inline";
+    basicText.style.display = "none";
+  }
+}
+
 
 const skillsData ={
   "Column_1": {
@@ -14,10 +30,6 @@ const skillsData ={
       "HTML5",
       "CSS3",
       "Python"
-    ],
-    "Familiar_with": [
-      "C++",
-      "Dart"
     ],
     "Language_Skills": {
       "English": "C1",
@@ -30,10 +42,7 @@ const skillsData ={
       "MySQL",
       "Postman",
       "Git",
-      "LaTeX",
-      "NPM",
       "Firebase",
-      "MVC Design Pattern",
       "Data Structures",
       "Docker",
       "JIRA"
@@ -44,12 +53,9 @@ const skillsData ={
       "React.js",
       "Next.js",
       "Electron.js",
-      "RESTful API",
       "Redux",
       "Express.js",
-      "JSON",
       "Tailwind CSS",
-      "JWT",
       "Material UI",
       "Jest"
     ]
@@ -187,7 +193,7 @@ function displayProjects(projects) {
   projects.forEach(project => {
     // Create the main container for each project
     const projectDiv = document.createElement('div');
-    projectDiv.className = 'details-container color-container';
+    projectDiv.className = 'details-container project-container';
 
     // Create the article container for the project image
     const articleDiv = document.createElement('div');
