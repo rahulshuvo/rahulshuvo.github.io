@@ -471,6 +471,7 @@ h1 {
   max-width: 350px;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
 }
 
 .project-img {
@@ -482,6 +483,12 @@ h1 {
 .project-title {
   margin: 1rem;
   color: black;
+}
+
+/* PROJECTS SECTION ANIMATION */
+.project-container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* CONTACT */
