@@ -468,10 +468,18 @@ h1 {
 }
 
 .project-container {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 350px;
-  border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-img {

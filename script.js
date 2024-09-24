@@ -156,6 +156,13 @@ document.addEventListener('DOMContentLoaded', displaySkills);
 const projectsData = {
   projects: [
     {
+      title: "Job Junction",
+      imageSrc: "./assets/job-junction.png",
+      altText: "Project 0",
+      githubLink: "https://github.com/rahulshuvo/job-junction",
+      liveDemoLink: "https://job-junction-delta.vercel.app/"
+    },
+    {
       title: "MERN Authentication System",
       imageSrc: "./assets/MERN-Authentication-System.png",
       altText: "Project 1",
@@ -193,7 +200,7 @@ function displayProjects(projects) {
   projects.forEach(project => {
     // Create the main container for each project
     const projectDiv = document.createElement('div');
-    projectDiv.className = 'details-container project-container';
+    projectDiv.className = 'project-container';
 
     // Create the article container for the project image
     const articleDiv = document.createElement('div');
