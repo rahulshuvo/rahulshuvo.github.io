@@ -46,9 +46,18 @@ nav,
 }
 
 nav {
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 15vh;
+}
+#desktop-nav{
+  width: 1400px;
+}
+#hamburger-nav{
+  width: 100%;
 }
 
 .nav-links {
@@ -172,6 +181,10 @@ section {
   padding-top: 10vh;
   margin: 0 10rem;
   min-height: fit-content;
+}
+
+section:first-of-type {
+  padding-top: calc(17vh + 10vh); /* 17vh for navbar height + 10vh original padding */
 }
 
 .section-container {
@@ -566,4 +579,25 @@ footer p {
 
 .btn-container {
   margin-top: 15px;
+}
+
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

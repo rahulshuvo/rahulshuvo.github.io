@@ -1,3 +1,50 @@
+let lenis;
+
+
+
+const init = () => {
+    lenis = new Lenis({
+        lerp: 0.08,
+        smoothWheel: true,
+    });
+
+    lenis.on('scroll', ({ scroll }) => {
+        // You can do something with the scroll value if needed
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    addEventListeners();
+};
+
+const addEventListeners = () => {
+    // Add smooth scrolling to all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                lenis.scrollTo(targetElement, {
+                    offset: -65, 
+                    duration: 1.5, 
+                });
+            }
+        });
+    });
+};
+
+init();
+
+
+
+
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
